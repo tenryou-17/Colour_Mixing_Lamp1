@@ -58,5 +58,4 @@ void loop()
 
 void statechange() //flip flops LED state
 {
-  state = !state;
 }
