@@ -24,7 +24,7 @@ void loop()
   unsigned int rgbColour[3];
 
   if (state == HIGH)
-  {
+  {  //The code below to cycle through RGB colours was borrowed from this fine person here:"https://gist.github.com/jamesotron/766994"
     // Start off with red.
     rgbColour[0] = 255;
     rgbColour[1] = 0;
@@ -58,4 +58,5 @@ void loop()
 
 void statechange() //flip flops LED state
 {
+  state = !state; //There could probably be a button de-bounce code in here, but i was too lazy which is why i used the capacitor. 
 }
